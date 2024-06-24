@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Vivek Singh</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Certificates</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br><span>Vivek Singh.</span></h2>
+            <h3>I'm a Data Analyst.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Data Analyst.</h3>
+                <p>I am Vivek Singh, a dedicated and enthusiastic Data Analyst with a strong foundation in data science
+                    and analytics. Currently, I am pursuing a Bachelor's degree in Technology (B-Tech) at RKDF
+                    University. Prior to this, I completed a diploma in Polytechnic from SunderDeep Group of
+                    Institutions, where I developed a solid technical background and a keen interest in data-driven
+                    decision-making. <br>
+                    My journey into the world of data analytics began during my polytechnic studies, where I was
+                    introduced to the power of data in uncovering insights and driving impactful decisions. This
+                    interest blossomed into a passion as I engaged with various projects and coursework that honed my
+                    skills in data analysis, statistical modeling, and data visualization.</p>
+            </div>
+            <div class="w50">
+                <img src="./images/vivekfpf.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>TABLEAU PROJECTS</h2>
+            <p>Visualized regional sales trends to enhance data-driven decision making.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="./images/hr.png" alt="">
+                <h2>HUMAN RESOURCE ANALYSIS</h2>
+                <p>Power BI project for HR Analytics with KPI cards for Employee Count, Attrition, Attrition Rate,
+                    Average Rate, Average Salary and Average Years. I have created multiple charts and pivots for
+                    Attrition by ...</p>
+                <button onclick="window.location.href='tableau.html';" class="button1 type1">
+                    <span class="btn-txt">View Project</span>
+                </button>
+            </div>
+
+            <div class="servicesBx">
+                <img src="./images/ecom.png" alt="">
+                <h2>ECOMMERCE SALES DASHBOARD</h2>
+                <p>A Power BI Dashboard for an e-commerce sales that includes KPI Cards for Revenue, Quantity sold,
+                    Sales and AOV. I have created filter enabled different...</p>
+                <button onclick="window.location.href='tableau1.html';" class="button1 type1">
+                    <span class="btn-txt">View Project</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>SQL PROJECTS</h2>
+            <p>Optimized database performance through indexing and query optimization.</p>
+        </div>
+        <div class="content">
+
+            <div class="servicesBx">
+                <img src="./images/report.png" alt="">
+                <h2>ANNUAL REPORT 2022</h2>
+                <p>I created Excel Dashboard for Annuall Report for an organization called Vrinda Store. This dashboard
+                    have multiple filters for Months, Channel and Category. Developed Bar Graphs and Pie chart...</p>
+                <button onclick="window.location.href='sql.html';" class="button1 type1">
+                    <span class="btn-txt">View Project</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>ACHIEVEMENTS</h2>
+            <p>Earned multiple certifications from leading organizations in the field of data analytics.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="./images/DataAnalysis.jpg" alt="">
+                
+            </div>
+            <div class="workBx">
+                <img src="./images//Powerbi.jpg" alt="">
+                
+            </div>
+            <div class="workBx">
+                <img src="./images//SQL.jpg" alt="">
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Me</h2>
+            <p>If you have any questions, comments, or would like to discuss a project, please feel free to reach out. I
+                look forward to connecting with you!</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Information:</h3>
+                <div class="contactInfoBx">
+                    
+                    <div class="box">
+                        
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+91 - 7982839795</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>vs94372@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form id="contactForm" action="https://formspree.io/f/xnnaabzo" method="POST">
+                    <h3>Message Me</h3>
+                    <input type="text" name="text" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>©VivekSingh</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        const toggleMenu = () => {
+            const menuToggle = document.querySelector('.toggle');
+            const menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+
+        function clearForm() {
+            // Get the form element
+            var form = document.getElementById('contactForm');
+
+            // Check if form is successfully submitted
+            setTimeout(function () {
+                form.reset();
+            }, 10); // Adjust the delay as needed
+
+            return true; // Allow the form to submit
+        }
+
+        // Attach the clearForm function to the form's submit event
+        document.getElementById('contactForm').onsubmit = clearForm;
+    </script>
+</body>
+
+</html>
